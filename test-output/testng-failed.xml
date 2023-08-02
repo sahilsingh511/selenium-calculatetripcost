@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestOnChrome(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.selenium.tripcost.test.TripAdvisorTest.TestProject">
+        <methods>
+          <include name="test2"/>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.selenium.tripcost.test.TripAdvisorTest.TestProject -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
